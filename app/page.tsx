@@ -32,25 +32,31 @@ export default function Home() {
           Next.js Image Lazy Loading with Swiper Demo
         </h1>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
-          This demo shows how Next.js Image and Swiper share the same native{" "}
+          This demo proves that Next.js Image and Swiper work well together
+          using the same{" "}
           <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">
-            loading=&quot;lazy&quot;
+            loading="lazy"
           </code>{" "}
-          API, making them work together seamlessly for optimal performance.
+          API. Check out the code below and{" "}
+          <a
+            href="https://twitter.com/marcelfahle"
+            className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            let me know
+          </a>{" "}
+          what you think.
         </p>
         <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300 mb-8">
-          <li>Both components respect the native lazy loading attribute</li>
-          <li>No additional configuration needed - it just works</li>
-          <li>Images load automatically as they enter the viewport</li>
-          <li>
-            Scroll down to see lazy loading in action across multiple carousels
-          </li>
+          <li>Both use the same lazy loading API</li>
+          <li>No extra setup needed</li>
+          <li>Images load when you scroll to them</li>
+          <li>Scroll down to see it work</li>
         </ul>
 
         <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-lg font-semibold mb-3">
-            Implementation Example:
-          </h3>
+          <h3 className="text-lg font-semibold mb-3">Here's the code:</h3>
           <pre className="overflow-x-auto text-sm bg-white dark:bg-gray-900 p-4 rounded">
             <code>{`<SwiperSlide key={index}>
   <div className="relative aspect-[2/1] w-full">

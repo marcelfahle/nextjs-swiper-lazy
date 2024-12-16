@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Image Lazy Loading with Swiper Demo
+
+This demo proves that Next.js Image and Swiper work well together using the same `loading="lazy"` API. Scroll down to see how images load only when you need them.
+
+🔗 **[View Demo](https://lazy-carousel.marcelfahle.net)**
+
+## Key Features
+
+- Images load when you scroll to them
+- Works with multiple carousels
+- Handles different screen sizes well
+- Looks good in dark mode 🤣
+
+## Implementation Example
+
+```jsx
+<SwiperSlide key={index}>
+  <div className="relative aspect-[2/1] w-full">
+    <Image
+      src={src}
+      alt={`Slide ${index + 1}`}
+      fill
+      className="object-cover rounded-lg"
+      sizes="(max-width: 768px) 100vw, 800px"
+      loading="lazy"  {/* ← Native lazy loading API */}
+    />
+  </div>
+</SwiperSlide>
+```
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
+```
+
+Then, run the development server:
+
+```bash
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js 15](https://nextjs.org)
+- [Swiper](https://swiperjs.com)
+- [Tailwind CSS](https://tailwindcss.com)
 
-## Learn More
+## About
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created by [Marcel Fahle](https://marcelfahle.net) | [Bold Video](https://bold.video)
