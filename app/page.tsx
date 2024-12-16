@@ -35,7 +35,7 @@ export default function Home() {
           This demo proves that Next.js Image and Swiper work well together
           using the same{" "}
           <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">
-            loading="lazy"
+            loading=&quot;lazy&quot;
           </code>{" "}
           API. Check out the code below and{" "}
           <a
@@ -56,7 +56,7 @@ export default function Home() {
         </ul>
 
         <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg">
-          <h3 className="text-lg font-semibold mb-3">Here's the code:</h3>
+          <h3 className="text-lg font-semibold mb-3">Here&apos;s the code:</h3>
           <pre className="overflow-x-auto text-sm bg-white dark:bg-gray-900 p-4 rounded">
             <code>{`<SwiperSlide key={index}>
   <div className="relative aspect-[2/1] w-full">
