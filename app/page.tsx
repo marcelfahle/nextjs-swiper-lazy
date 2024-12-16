@@ -34,7 +34,7 @@ export default function Home() {
         <p className="text-gray-600 dark:text-gray-300 mb-4">
           This demo shows how Next.js Image and Swiper share the same native{" "}
           <code className="bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">
-            loading="lazy"
+            loading=&quot;lazy&quot;
           </code>{" "}
           API, making them work together seamlessly for optimal performance.
         </p>
